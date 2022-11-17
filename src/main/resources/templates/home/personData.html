@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- så giver den ikke fake errors i
+thymelesaf expressions i html formen eller her -->
+<!--xmlns:th="http://www.w3.org/1999/xhtml"-->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>This is the Person Data page</h1>
+<br>
+<!--<span th:text="${first_name}"></span>
+<span th:text="${last_name}"></span>-->
+
+<!-- dollar tegn er højre-alt + 4 !!! -->
+<span th:text="${Person.first_name}"/> <!--kan tage både Person og person, gør det samme?? -->
+<span th:text="${Person.last_name}"/>
+<span th:text="${Person.age}"/>
+
+</body>
+</html>
+<!--th betyder thymeleaf expression -->

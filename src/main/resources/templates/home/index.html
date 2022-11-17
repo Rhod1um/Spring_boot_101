@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Spring Fun</title>
+  <style>
+    #wrapper {    <!--Douglas lærte på html kursus at nulstille alt i css før man selv layouter  -->
+      height:100px;
+      width:400px;
+      border: 1px solid black;  <!--hiearki css: inline har højere hierarki end css fil -->
+      padding: 4px;
+      margin: auto;
+    }
+    #left {
+      width: 190px;
+      float: left;
+      border: 1px solid red;
+      padding: 4px;
+    }
+    #left form input {
+      margin-bottom: 4px;
+    }
+    #right {
+      width: 198px;
+      height: 83px;
+      float: left;
+      border: 1px solid blue;
+    }
+  </style>
+</head>
+<body>
+<h1>This is my spring project</h1>
+<div id="wrapper">
+
+  <div id="left">
+    <form action="/personData" method="post">
+      <input type="text" name="first_name" placeholder="First name">
+      <input type="text" name="last_name" placeholder="Last name">
+      <input type="text" name="age" placeholder="Age">
+      <input type="submit" value="Send data">
+    </form>
+  </div>
+
+  <div id="right">
+    <input type="radio" name="Vehicle" checked>I am a bike<br>
+    <input type="radio" name="Vehicle">I am a car<br>
+    <input type="radio" name="Vehicle">I am a scooter<br>
+  </div>
+
+</div>
+</body>
+</html>l>
